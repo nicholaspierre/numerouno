@@ -1,3 +1,7 @@
+
+// Authored by Nicholas Pierre
+
+
 var readline = require('readline');
 
 var rl = readline.createInterface({
