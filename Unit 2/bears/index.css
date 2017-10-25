@@ -1,0 +1,26 @@
+body {
+    font-family: monospace;
+    font-size: 24px;
+}
+
+#bodyText {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    width: 40em;
+}
+
+ @media print {
+    #sidebar {
+        display: none;
+    }
+    #bodyText {
+        width: 100%;
+    }
+ }
+
+ @media (max-width: 961px) {
+    #bodyText {
+        width: 30em;
+    }
+ }

@@ -1,0 +1,39 @@
+body {
+    font-family: monospace;
+    font-size: 20px;
+}
+
+li {
+    margin-bottom: 30px;
+}
+
+
+#sidebar {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background-color: red;
+    padding: 15px;
+    color: white;
+}
+
+#formatLink {
+    color: white;
+}
+
+#bodyText {
+    float: right;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    width: 75%;
+}
+
+ @media print {
+    #sidebar {
+        display: none;
+    }
+    #bodyText {
+        width: 100%;
+    }
+ }
