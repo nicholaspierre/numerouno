@@ -1,0 +1,35 @@
+#navigation {
+
+}
+#navigation ul {
+    
+}
+    
+#navigation li {
+    display: inline;
+    background-color: rgb(226, 226, 226);
+    padding: 0.5em;
+}
+    
+#case {
+    width: 300px;
+    background-color: rgb(226, 226, 226);
+    margin-top: 0px;
+}
+    
+#footer {
+    background-color: rgb(226, 226, 226);
+    display: inline;
+    width: 300px;
+}
+    
+#footer ul {
+    list-style: none;
+    
+}
+    
+#footer  li {
+    display: inline;
+}
+    
+    

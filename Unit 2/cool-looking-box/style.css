@@ -16,7 +16,7 @@ html {
       background-color: #ff0000;
       border-radius: 0.55em;
       border: 1px solid #dd0000;
-      background-image: linear-gradient(to top left, green 40%, red);
+      background-image: linear-gradient(to top left, red 40%, rgb(140, 3, 3));
       box-shadow: 0.33em 0.33em 1em grey,
                 inset 0.1em 0.1em 0.1em white,
                 inset -0.1em -0.1em 0.1em gray;

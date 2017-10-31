@@ -1,0 +1,22 @@
+h1 {
+    font-family: sans-serif;
+}
+
+li {
+    list-style-type: none;
+    font-family: serif;
+}
+
+a:hover {
+    color: pink;
+}
+#sidebar {
+    display: inline-block;
+    width: 200px;
+    border-right: 1px dotted rgb(0, 0, 0);
+}
+
+#content {
+    display: inline-block;
+    position: right;
+}
