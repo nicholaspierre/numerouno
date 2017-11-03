@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Muffin count: <span id="muffincount"></span></h1>
+    <button type="button" id="bakemuffin">Bake Muffin</button>
+    <button type="button" id="eatmuffin">Eat Muffin</button>
+</body>
+<script>
+    var buttonBakeMuffin = document.querySelector("#bakemuffin");
+    var buttonEatMuffin = document.querySelector("#eatmuffin");
+
+    var muffinCount = 10;
+
+    window.addEventListener("load", function(){
+
+        muffinCountlclStr = window.localStorage.getItem('muffinCount');
+
+        if (muffinCountlclStr) {
+            document.getElementById("muffincount").innerHTML = muffinCountlclStr;
+        } else {
+            document.getElementById("muffincount").innerHTML = muffinCount;
+        }
+        
+    })
+
+
+    buttonBakeMuffin.addEventListener("click", function(){
+        muffinCount += 5;
+        document.getElementById("muffincount").innerHTML = muffinCount;
+
+        window.localStorage.setItem('muffinCount', muffinCount);
+    })
+
+    buttonEatMuffin.addEventListener("click", function(){
+        muffinCount -= 1;
+        document.getElementById("muffincount").innerHTML = muffinCount;
+
+        window.localStorage.setItem('muffinCount', muffinCount);
+    })
+
+
+</script>
+</html>
